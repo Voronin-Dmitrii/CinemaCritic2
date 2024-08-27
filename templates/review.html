@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Leave a Review</h1>
+<form method="POST">
+    <div class="form-group">
+        <label for="review_text">Review</label>
+        <textarea class="form-control" id="review_text" name="review_text" rows="3" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+{% endblock %}

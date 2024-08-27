@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>{{ movie[1] }}</h1>
+<p>{{ movie[9] }}</p>
+<p>Release Year: {{ movie[2] }}</p>
+<p>Duration: {{ movie[3] }} minutes</p>
+<p>Average Rating: {{ movie[4] }}</p>
+<p>Kinoposik Rating: {{ movie[5] }}</p>
+<p>Release Date: {{ movie[7] }}</p>
+<p>Budget: {{ movie[11] }}</p>
+<p>Description: {{ movie[10] }}</p>
+
+<h2>Reviews</h2>
+<div>
+    {% for review in reviews %}
+    <div class="card mb-2">
+        <div class="card-body">
+            <h5 class="card-title">{{ review[2] }}</h5>
+            <p class="card-text">{{ review[0] }}</p>
+            <p class="card-text"><small class="text-muted">{{ review[1] }}</small></p>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+<a href="{{ url_for('review', movie_id=movie[0]) }}" class="btn btn-primary">Leave a Review</a>
+{% endblock %}

@@ -1,0 +1,64 @@
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+.sidebar {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.movie-list .card {
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.movie-list .card-title a {
+    text-decoration: none;
+    color: #343a40;
+}
+
+.movie-list .card-title a:hover {
+    text-decoration: underline;
+}
+
+.card-subtitle {
+    font-size: 0.9em;
+}
+
+.pagination {
+    margin-top: 20px;
+}
+
+.page-item.active .page-link {
+    background-color: #343a40;
+    border-color: #343a40;
+    color: #fff;
+}
+
+.page-link {
+    color: #343a40;
+}
+
+.page-link:hover {
+    color: #007bff;
+}
+
+.page-item.disabled .page-link {
+    color: #6c757d;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.btn-outline-secondary {
+    margin-right: 10px;
+}
